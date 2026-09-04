@@ -1,0 +1,799 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Diagnose and resolve common payroll calculation problems: missing contracts, incorrect bases, zero tax, and batch performance issues.">
+      
+      
+      
+        <link rel="canonical" href="https://joanbazagc.github.io/pruebas/payroll-calculation/troubleshooting-payroll-calculation/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Troubleshooting Payroll Calculation in Omne RH Payroll - Omne RH Payroll Help</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting-payroll-calculation-in-omne-rh-payroll" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Omne RH Payroll Help" class="md-header__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Omne RH Payroll Help
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting Payroll Calculation in Omne RH Payroll
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Omne RH Payroll Help" class="md-nav__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Omne RH Payroll Help
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception-schemes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perception Schemes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Calculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../salary-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Salary Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../employees-payroll/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Employees (Payroll)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contracts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contracts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../simulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simulations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sick-leave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sick Leave
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../income-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Income Tax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../payroll-payment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Payment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labor-agreements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labor Agreements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-contributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Contributions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bizneo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bizneo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recipient-without-active-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recipient without active contract
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-scheme-for-the-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      No scheme for the period
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#days-contributed-are-zero-or-incorrect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Days contributed are zero or incorrect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-security-base-does-not-match-manual-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social security base does not match manual calculation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#income-tax-withholding-is-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Income tax withholding is zero
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advances-are-not-deducted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advances are not deducted
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sick-leave-benefits-are-incorrect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sick leave benefits are incorrect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cannot-void-a-posted-payroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cannot void a posted payroll
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-calculation-is-very-slow-or-hangs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch calculation is very slow or hangs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-pay-complementary-calculates-zero-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back pay complementary calculates zero difference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-pay-proration-is-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra pay proration is missing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting-payroll-calculation-in-omne-rh-payroll">Troubleshooting Payroll Calculation in Omne RH Payroll<a class="headerlink" href="#troubleshooting-payroll-calculation-in-omne-rh-payroll" title="Permanent link">&para;</a></h1>
+<p>Solutions for common problems encountered during payroll calculation.</p>
+<h2 id="recipient-without-active-contract">Recipient without active contract<a class="headerlink" href="#recipient-without-active-contract" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The employee is skipped and the error log shows "Recipient without active contract".</p>
+<p><strong>Cause</strong>: The engine cannot find a contract with dates covering the calculation period.</p>
+<p><strong>Solution</strong>:
+1. Choose the search icon, enter <strong>"Employees (Payroll)"</strong>, and choose the related link.
+2. Open the employee card and navigate to <strong>Contracts</strong>.
+3. Verify a contract exists with:
+   - <strong>Start Date</strong> on or before the period start
+   - <strong>End Date</strong> on or after the period end (or blank for permanent)
+   - <strong>Company Leave</strong> blank or on or after the period start
+4. Create or renew the contract if needed, then recalculate.</p>
+<h2 id="no-scheme-for-the-period">No scheme for the period<a class="headerlink" href="#no-scheme-for-the-period" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The error log shows "There is no scheme for period".</p>
+<p><strong>Cause</strong>: The engine cannot find a perception scheme record with an application date on or before the period start.</p>
+<p><strong>Solution</strong>:
+1. Verify the employee has a perception scheme assigned.
+2. Check that the <strong>Application Date</strong> is on or before the first day of the period.
+3. Verify the <strong>Labor Agreement</strong> in the scheme matches the active contract.
+4. If the agreement changed recently, create a new scheme key with the correct application date.</p>
+<h2 id="days-contributed-are-zero-or-incorrect">Days contributed are zero or incorrect<a class="headerlink" href="#days-contributed-are-zero-or-incorrect" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The payroll header shows "Days Contributed = 0" or an unexpected number.</p>
+<p><strong>Cause</strong>: Calendar not configured (part-time), "Skip day 31" setting active, or incidents absorbing all days.</p>
+<p><strong>Solution</strong>:
+- For <strong>part-time</strong>: verify the employee calendar has correct work days defined.
+- For <strong>day 31 issue</strong>: choose the search icon, enter <strong>"Company Configuration"</strong>, and check the "Skip day 31 monthly payment" field.
+- For <strong>incidents</strong>: verify incident dates are correct; incorrect dates may absorb the entire period.</p>
+<h2 id="social-security-base-does-not-match-manual-calculation">Social security base does not match manual calculation<a class="headerlink" href="#social-security-base-does-not-match-manual-calculation" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The common contingencies base differs from the expected manual calculation.</p>
+<p><strong>Cause</strong>: The base includes prorated extra pay, IT bases from the previous month, and is subject to maximum/minimum limits.</p>
+<p><strong>Solution</strong>:
+1. In payroll lines, filter by concepts with "Subject to SS = Yes" and sum the partial amounts (this is the contributable remuneration).
+2. Add the proration (visible in the header <strong>Proration</strong> field).
+3. If there is sick leave, add the previous month IT base.
+4. Compare with contribution group limits. The engine applies minimums and maximums automatically.
+5. For part-time, limits are calculated per contracted hour.</p>
+<h2 id="income-tax-withholding-is-zero">Income tax withholding is zero<a class="headerlink" href="#income-tax-withholding-is-zero" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The payroll calculates correctly but income tax retention is 0.</p>
+<p><strong>Cause</strong>: Withholding percentage is 0%, all concepts are tax-exempt, or perception keys are missing.</p>
+<p><strong>Solution</strong>:
+1. Check the <strong>Withholding Percentage</strong> in the employee card (Income Tax tab).
+2. If 0%, calculate or manually assign the income tax percentage.
+3. Verify scheme lines have a <strong>Perception Key</strong> assigned (usually "A" for employment income).
+4. Verify salary concepts are not all marked as "Tax Exempt".</p>
+<h2 id="advances-are-not-deducted">Advances are not deducted<a class="headerlink" href="#advances-are-not-deducted" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The employee has pending advances but the payroll does not include a deduction line.</p>
+<p><strong>Solution</strong>:
+1. Verify advances were registered with <strong>Operation Type = Advances</strong> (value 4).
+2. Check that the advance lines have the "Pay Number" field empty (indicating not yet deducted).
+3. Verify the advance period is within the current calculation period range.</p>
+<h2 id="sick-leave-benefits-are-incorrect">Sick leave benefits are incorrect<a class="headerlink" href="#sick-leave-benefits-are-incorrect" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: Social security benefit and company supplement amounts do not match expected values.</p>
+<p><strong>Cause</strong>: The previous month daily base is incorrect.</p>
+<p><strong>Solution</strong>:
+1. Choose the search icon, enter <strong>"Incidents"</strong>, and choose the related link.
+2. Verify the <strong>Common Contingencies</strong> field contains the correct previous month base.
+3. Verify <strong>Days Contributed</strong> is correct (usually 30).
+4. If bases are wrong, modify the incident start date and re-validate to recalculate bases.
+5. Verify benefit brackets (social security % and company %) are correctly configured.
+6. Void and recalculate the payroll.</p>
+<h2 id="cannot-void-a-posted-payroll">Cannot void a posted payroll<a class="headerlink" href="#cannot-void-a-posted-payroll" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system prevents voiding because the payroll is posted.</p>
+<p><strong>Solution</strong>:
+1. First reverse the corresponding accounting entry from the accounting module.
+2. Once reversed, the payroll returns to "not posted" state.
+3. Proceed to void the payroll normally.
+4. Correct data, recalculate, and re-post.</p>
+<h2 id="batch-calculation-is-very-slow-or-hangs">Batch calculation is very slow or hangs<a class="headerlink" href="#batch-calculation-is-very-slow-or-hangs" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: Batch processing takes excessively long or appears stuck.</p>
+<p><strong>Cause</strong>: Large employee volume, record locking from concurrent processes, or orphaned records in the intermediate memory table.</p>
+<p><strong>Solution</strong>:
+1. Verify no other user is running a simultaneous calculation on the same employees.
+2. Split the calculation into smaller batches (by contribution unit or employee range).
+3. If the problem persists, contact the system administrator to check database locks.</p>
+<h2 id="back-pay-complementary-calculates-zero-difference">Back pay complementary calculates zero difference<a class="headerlink" href="#back-pay-complementary-calculates-zero-difference" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: A back pay complementary payroll shows 0 for all amounts.</p>
+<p><strong>Solution</strong>:
+1. Verify the labor agreement salary tables were updated with the new amounts.
+2. Check that the <strong>Application Date</strong> of the new table is on or before the back pay period start.
+3. Review salary concepts: those marked "Not Retroactive = Yes" are correctly excluded from the difference calculation.</p>
+<h2 id="extra-pay-proration-is-missing">Extra pay proration is missing<a class="headerlink" href="#extra-pay-proration-is-missing" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The payroll header shows "Proration = 0" and the contribution base does not include extra pay proportion.</p>
+<p><strong>Solution</strong>:
+1. Verify the perception scheme has lines for extra pay concepts.
+2. Check that extra pay lines have amounts assigned.
+3. If extra payments are paid separately (type "Extra Pay"), proration in the monthly payroll is 0 (this is correct behavior).</p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../review-calculation-error-log/">Review the calculation error log</a></li>
+<li><a href="../setup-payroll-calculation/">Set up payroll calculation prerequisites</a></li>
+<li><a href="../faq-payroll-calculation/">Payroll Calculation FAQ</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

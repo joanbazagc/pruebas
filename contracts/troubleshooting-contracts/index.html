@@ -1,0 +1,769 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Diagnose and resolve common errors when managing employment contracts including extension failures, AFI issues, and print model errors in Omne RH Payroll.">
+      
+      
+      
+        <link rel="canonical" href="https://joanbazagc.github.io/pruebas/contracts/troubleshooting-contracts/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Troubleshooting Contracts in Omne RH Payroll - Omne RH Payroll Help</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting-contracts-in-omne-rh-payroll" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Omne RH Payroll Help" class="md-header__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Omne RH Payroll Help
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting Contracts in Omne RH Payroll
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Omne RH Payroll Help" class="md-nav__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Omne RH Payroll Help
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception-schemes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perception Schemes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../payroll-calculation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Calculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../salary-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Salary Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../employees-payroll/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Employees (Payroll)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contracts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../simulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simulations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sick-leave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sick Leave
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../income-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Income Tax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../payroll-payment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Payment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labor-agreements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labor Agreements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-contributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Contributions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bizneo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bizneo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cannot-modify-the-contract-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cannot modify the contract key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cannot-create-an-extension-this-contract-cannot-be-extended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cannot create an extension - "This contract cannot be extended"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-duration-exceeds-maximum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension duration exceeds maximum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-office-netcontrata-actions-are-not-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Office (NetContrata) actions are not visible
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cannot-generate-afi-leave-missing-required-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cannot generate AFI leave - missing required data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-model-not-found-when-printing-a-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Print model not found when printing a contract
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cannot-delete-a-contract-payrolls-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cannot delete a contract - payrolls exist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#employee-data-not-updated-after-contract-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee data not updated after contract modification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions-cannot-be-deleted-order-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions cannot be deleted - order error
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting-contracts-in-omne-rh-payroll">Troubleshooting Contracts in Omne RH Payroll<a class="headerlink" href="#troubleshooting-contracts-in-omne-rh-payroll" title="Permanent link">&para;</a></h1>
+<h2 id="cannot-modify-the-contract-key">Cannot modify the contract key<a class="headerlink" href="#cannot-modify-the-contract-key" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error or blocks editing the <strong>Contract Key</strong> field.</p>
+<p><strong>Cause</strong>: The contract has linked extensions. The system blocks this change to maintain duration validation consistency.</p>
+<p><strong>Solution</strong>:
+1. Open the extensions list for the contract (choose <strong>Extensions</strong> from the contract).
+2. Delete extensions in <strong>reverse order</strong> (last to first).
+3. Return to the contract card and modify the <strong>Contract Key</strong>.
+4. Recreate extensions if needed.</p>
+<h2 id="cannot-create-an-extension-this-contract-cannot-be-extended">Cannot create an extension - "This contract cannot be extended"<a class="headerlink" href="#cannot-create-an-extension-this-contract-cannot-be-extended" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system displays an error when trying to create an extension.</p>
+<p><strong>Cause</strong>: Either the contract is marked as <strong>Terminated</strong> = Yes, or it is already marked as <strong>Extended</strong> = Yes.</p>
+<p><strong>Solution</strong>:
+- If <strong>Terminated</strong> = Yes: the contract is closed. Create a new contract instead.
+- If <strong>Extended</strong> = Yes: an extension already exists. Create the next extension from the most recent extended contract, not the original.</p>
+<h2 id="extension-duration-exceeds-maximum">Extension duration exceeds maximum<a class="headerlink" href="#extension-duration-exceeds-maximum" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error about exceeding maximum time when entering an extension duration.</p>
+<p><strong>Cause</strong>: The extension end date exceeds the <strong>Maximum Time</strong> defined in the contract type, calculated from the start date of the first contract in the series.</p>
+<p><strong>Solution</strong>:
+1. Check the <strong>Start Date</strong> of the first contract in the employee's series for that key.
+2. Look up the <strong>Maximum Time</strong> in the contract types catalog.
+3. Calculate the maximum allowed date: first contract start date + maximum time.
+4. Adjust the extension duration so the end date stays within this limit.
+5. If the worker must continue beyond the maximum, consider converting to a permanent contract.</p>
+<h2 id="online-office-netcontrata-actions-are-not-visible">Online Office (NetContrata) actions are not visible<a class="headerlink" href="#online-office-netcontrata-actions-are-not-visible" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The contracts list does not show the Online Office action group.</p>
+<p><strong>Cause</strong>: The NetContrata integration is not configured or not active.</p>
+<p><strong>Solution</strong>:
+1. Choose the search icon, enter <strong>"OMNE NetContrata Config"</strong>, and choose the related link.
+2. Verify a configuration record exists.
+3. Confirm the integration is marked as active.
+4. Verify credentials and connection endpoint.
+5. Close and reopen the contracts list.</p>
+<h2 id="cannot-generate-afi-leave-missing-required-data">Cannot generate AFI leave - missing required data<a class="headerlink" href="#cannot-generate-afi-leave-missing-required-data" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error when choosing <strong>Create AFI Leave</strong>.</p>
+<p><strong>Cause</strong>: The <strong>Company Leave</strong> field or <strong>Leave Cause Code</strong> field is empty.</p>
+<p><strong>Solution</strong>:
+1. Open the contract card.
+2. Fill in the <strong>Company Leave</strong> field with the leave date.
+3. Fill in the <strong>Leave Cause Code</strong> field.
+4. Choose <strong>Save</strong>.
+5. Return to the contracts list and retry <strong>Create AFI Leave</strong>.</p>
+<h2 id="print-model-not-found-when-printing-a-contract">Print model not found when printing a contract<a class="headerlink" href="#print-model-not-found-when-printing-a-contract" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error that no print model is available.</p>
+<p><strong>Cause</strong>: No print model is assigned for the contract type, document type (CONTRACT or ANNEX), and optionally the employee's language.</p>
+<p><strong>Solution</strong>:
+1. Choose the search icon, enter <strong>"Contract Types"</strong>, and choose the related link.
+2. Select the contract type that failed.
+3. Choose <strong>Print Models</strong> from the action bar.
+4. Verify at least one model of type CONTRACT exists.
+5. If missing, create one and link a valid report.</p>
+<h2 id="cannot-delete-a-contract-payrolls-exist">Cannot delete a contract - payrolls exist<a class="headerlink" href="#cannot-delete-a-contract-payrolls-exist" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error about existing calculated payrolls when trying to delete.</p>
+<p><strong>Cause</strong>: Calculated payrolls exist for the employee in the contract period.</p>
+<p><strong>Solution</strong>:
+1. Identify the calculated payrolls for the employee.
+2. Cancel the payrolls from the Payroll Calculation module.
+3. Retry the contract deletion.</p>
+<p>Note: Deleting a contract also removes associated substitutions, subsidies, perception schemes, and work calendar in cascade.</p>
+<h2 id="employee-data-not-updated-after-contract-modification">Employee data not updated after contract modification<a class="headerlink" href="#employee-data-not-updated-after-contract-modification" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: After modifying contract fields, the employee card does not reflect the changes.</p>
+<p><strong>Cause</strong>: The contract-to-employee synchronization runs on the OnModify trigger. If modification was done externally or an error occurred, data may be out of sync.</p>
+<p><strong>Solution</strong>:
+1. Open the contract card.
+2. Make a minor change (for example, modify and restore a field value).
+3. Choose <strong>Save</strong> to force the OnModify trigger to execute.
+4. Verify that employee data is now updated.</p>
+<h2 id="extensions-cannot-be-deleted-order-error">Extensions cannot be deleted - order error<a class="headerlink" href="#extensions-cannot-be-deleted-order-error" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The system shows an error when trying to delete an extension.</p>
+<p><strong>Cause</strong>: Extensions must be deleted in reverse order (last to first) to maintain date consistency.</p>
+<p><strong>Solution</strong>:
+1. Identify the last extension (highest <strong>Extension No.</strong>).
+2. Delete it first.
+3. Continue deleting from highest to lowest number until you reach the one to remove.
+4. If you only need to close an extension without deleting it, set <strong>Extension Finalized</strong> = Yes instead.</p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../faq-contracts/">Contracts FAQ</a></li>
+<li><a href="../">Contracts overview</a></li>
+<li><a href="../setup-contracts/">Set up the Contracts module</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

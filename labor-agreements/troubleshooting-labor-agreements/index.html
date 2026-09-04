@@ -1,0 +1,734 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resolve common issues with labor agreements including amounts not updating, coefficient errors, missing lines, and part-time miscalculations.">
+      
+      
+      
+        <link rel="canonical" href="https://joanbazagc.github.io/pruebas/labor-agreements/troubleshooting-labor-agreements/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Troubleshooting Labor Agreements in Omne RH Payroll - Omne RH Payroll Help</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting-labor-agreements-in-omne-rh-payroll" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Omne RH Payroll Help" class="md-header__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Omne RH Payroll Help
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting Labor Agreements in Omne RH Payroll
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Omne RH Payroll Help" class="md-nav__button md-logo" aria-label="Omne RH Payroll Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Omne RH Payroll Help
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception-schemes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perception Schemes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../payroll-calculation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Calculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../salary-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Salary Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../employees-payroll/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Employees (Payroll)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contracts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contracts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../simulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simulations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sick-leave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sick Leave
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../income-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Income Tax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../payroll-payment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Payroll Payment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labor Agreements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-contributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Contributions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-security-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Security Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bizneo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bizneo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amounts-do-not-update-after-applying-the-agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amounts do not update after applying the agreement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-when-assigning-a-vacation-pay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error when assigning a vacation pay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-when-entering-a-coefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error when entering a coefficient
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#salary-table-lines-disappear" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salary table lines disappear
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formula-does-not-generate-an-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formula does not generate an amount
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-time-amounts-are-incorrect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part-time amounts are incorrect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professional-category-does-not-appear-in-lookups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professional category does not appear in lookups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#salary-level-lines-not-applied-to-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salary level lines not applied to employee
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting-labor-agreements-in-omne-rh-payroll">Troubleshooting Labor Agreements in Omne RH Payroll<a class="headerlink" href="#troubleshooting-labor-agreements-in-omne-rh-payroll" title="Permanent link">&para;</a></h1>
+<p>Solutions for common issues when working with labor agreements.</p>
+<h2 id="amounts-do-not-update-after-applying-the-agreement">Amounts do not update after applying the agreement<a class="headerlink" href="#amounts-do-not-update-after-applying-the-agreement" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: You run the Apply action, but some perception scheme lines keep their old amounts.</p>
+<p><strong>Cause</strong>: The Agreement Change flag is disabled on those lines. This means they are protected as voluntary improvements and the system correctly skipped them.</p>
+<p><strong>Solution</strong>:
+- If the protection is intentional, this is expected behavior.
+- If the protection is accidental, enable the Agreement Change flag on the affected lines and run Apply again.</p>
+<h2 id="error-when-assigning-a-vacation-pay">Error when assigning a vacation pay<a class="headerlink" href="#error-when-assigning-a-vacation-pay" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: When filling in the <strong>Vacation Pay No.</strong> field in the agreement header, the system shows an error.</p>
+<p><strong>Cause</strong>: The selected pay is not of type Vacation. The field only accepts pays of type Vacation.</p>
+<p><strong>Solution</strong>: Select a pay that is of type Vacation, or create a new pay with that type.</p>
+<p><strong>Error message</strong>: "Pay No. %1 is not on vacation"</p>
+<h2 id="error-when-entering-a-coefficient">Error when entering a coefficient<a class="headerlink" href="#error-when-entering-a-coefficient" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: When filling in the <strong>Coefficient</strong> field on an agreement line, the system shows an error.</p>
+<p><strong>Cause A</strong>: The line does not have a category assigned. Coefficients are only allowed on lines with a category.</p>
+<p><strong>Cause B</strong>: The line has a non-zero amount. Coefficient and amount are mutually exclusive.</p>
+<p><strong>Solution</strong>:
+- For Cause A: Assign a category to the line before entering the coefficient.
+- For Cause B: Set the amount to zero before entering the coefficient.</p>
+<p><strong>Error messages</strong>:
+- "You should not enter coefficients in the salary levels"
+- "To enter coefficient, leave the amount at 0"</p>
+<h2 id="salary-table-lines-disappear">Salary table lines disappear<a class="headerlink" href="#salary-table-lines-disappear" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: The agreement card lines subpage appears empty even though the agreement has salary data.</p>
+<p><strong>Cause</strong>: The application date in the header does not match any date that has lines defined.</p>
+<p><strong>Solution</strong>: Choose the <strong>Last Agreement Date</strong> action to reposition to the most recent salary table, or use <strong>Agreement Dates</strong> to select the correct date.</p>
+<h2 id="formula-does-not-generate-an-amount">Formula does not generate an amount<a class="headerlink" href="#formula-does-not-generate-an-amount" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: A calculation formula is defined on a line, but the resulting amount is zero.</p>
+<p><strong>Cause</strong>:
+- The salary concepts referenced in the formula tokens do not exist in the employee scheme or have zero amounts.
+- Annual working hours are zero in Payroll Config (if the formula uses token <code>#1</code>).
+- Circular dependency between formulas.</p>
+<p><strong>Solution</strong>:
+1. Ensure the base concepts referenced in the formula have amounts in the perception scheme.
+2. Fill in the annual working hours in Payroll Config.
+3. If there is a circular dependency, restructure the formula to eliminate the cycle.</p>
+<h2 id="part-time-amounts-are-incorrect">Part-time amounts are incorrect<a class="headerlink" href="#part-time-amounts-are-incorrect" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: After applying the agreement, amounts in the perception scheme are proportionally lower or higher than expected.</p>
+<p><strong>Cause</strong>: The <strong>Weekly Hours</strong> value in the agreement header or in the employee contract is incorrect or zero.</p>
+<p><strong>Solution</strong>: Correct the weekly hours in the agreement header and/or in the employee contract. Run Apply again.</p>
+<h2 id="professional-category-does-not-appear-in-lookups">Professional category does not appear in lookups<a class="headerlink" href="#professional-category-does-not-appear-in-lookups" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: When searching for a category in a lookup field, the category does not appear.</p>
+<p><strong>Cause</strong>: The category has the <strong>Blocked</strong> field set to Yes, which excludes it from lookups.</p>
+<p><strong>Solution</strong>: If the category should be available, clear the <strong>Blocked</strong> field. If it should remain hidden, this is expected behavior.</p>
+<h2 id="salary-level-lines-not-applied-to-employee">Salary level lines not applied to employee<a class="headerlink" href="#salary-level-lines-not-applied-to-employee" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom</strong>: Lines defined by salary level (without category) are not reflected in the employee scheme, even though the employee's category has that salary level.</p>
+<p><strong>Cause</strong>: A line exists for the same category and same salary concept, which takes priority over the salary level line. The system applies category-level lines first.</p>
+<p><strong>Solution</strong>: If you want the salary level line to apply, remove the category-level line for that concept. If both should coexist, adjust the amounts on the category-level line.</p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../apply-agreement-to-employees/">Apply Agreement to Employees</a></li>
+<li><a href="../faq-labor-agreements/">FAQ Labor Agreements</a></li>
+<li><a href="../">Labor Agreements Overview</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
